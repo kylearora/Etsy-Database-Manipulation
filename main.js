@@ -4,7 +4,6 @@
 // is properly working. The `data` variable is an array with 25 items in it
 console.log(data);
 
-
 // 1: Show me how to calculate the average price of all items.
 function question1 () {
   // Answer:
@@ -23,7 +22,7 @@ function question2 () {
   // Answer:
   let array = []
   for (var i = 0; i < data.length; i++) {
-    if (data[i].price > 14 && data[i].price < 18 ) {
+    if (data[i].price >= 14 && data[i].price <= 18 ) {
       array.push(data[i].title)
     }
   }
@@ -37,7 +36,7 @@ function question3 () {
   // Answer:
   for (var i = 0; i < data.length; i++) {
     if (data[i].currency_code == "GBP"){
-      console.log(data[i].title)
+      console.log(data[i].title + " costs " + data[10].price + " pounds")
     }
   }
 }
@@ -62,7 +61,7 @@ function question5 () {
   // Answer:
   for (var i = 0; i < data.length; i++) {
     if (data[i].materials.length > 8) {
-      console.log(data[i].title, data[i].materials.length, data[i].materials)
+      console.log(data[i].title, "has " + data[i].materials.length + " materials:", data[i].materials)
     }
   }
 }
@@ -78,5 +77,5 @@ function question6 () {
       total += 1;
     }
   }
-  console.log(total)
+  console.log(total + " items were made by their sellers.")
 }
