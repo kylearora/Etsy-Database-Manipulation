@@ -36,7 +36,7 @@ function question3 () {
   // Answer:
   for (var i = 0; i < data.length; i++) {
     if (data[i].currency_code == "GBP"){
-      console.log(data[i].title + " costs " + data[10].price + " pounds")
+      console.log(data[i].title + " costs " + data[10].price + " pounds.")
     }
   }
 }
